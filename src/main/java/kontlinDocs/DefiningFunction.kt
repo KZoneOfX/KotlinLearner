@@ -24,7 +24,11 @@ fun printSumNew(a : Int ,b : Int){
 }
 
 fun main(args:Array<String>){
-    val a :Int = 10
+//    if (args.size == 0) return
+
+//    println("First argument:${args[0]}")
+
+    val a: Int = 10 //参数定义
     val b  = 20
     val c :Int
     c = 100
@@ -33,4 +37,17 @@ fun main(args:Array<String>){
     printSum(a,b)
     println()
     printSumNew(c,a)
+
+    println("a:$a\t$sum")
 }
+
+//fun max(a: Int, b: Int): Int {
+//    if (a > b) {
+//        return a
+//    } else {
+//        return b
+//    }
+//}
+
+fun max(a: Int,b: Int) = if (a>b) a else b
+//----------------------------------------- page 5 end -----------------------------------------------
